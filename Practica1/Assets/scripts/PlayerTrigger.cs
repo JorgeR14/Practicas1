@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,35 @@ public class PlayerTrigger : MonoBehaviour
         if (other.gameObject.CompareTag(playerTag))
         {
             OnPlayerEnter(other.gameObject);
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag(playerTag))
+        {
+            OnPlayerStay(other.gameObject);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        OnplayerExit(other.gameObject);
+    }
+
+    public virtual void OnplayerExit(GameObject playerobject)
+    {
+    }
+
+    public virtual void OnPlayerStay(GameObject playerobject)
+    {
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag(playerTag))
+        {
+            OnPlayerEnter(collision.gameObject);
         }
     }
 
