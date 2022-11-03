@@ -22,4 +22,14 @@ public class LevelManager : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void ReturnMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void OpenScenery()
+    {
+        SceneManager.LoadScene(3);
+    }
 }
