@@ -42288,6 +42288,10 @@ PrefabInstance:
       propertyPath: m_SelectedVertices.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1813225544990616467, guid: 7661c5fef9ea5de4a8fa62bc20e38818, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8a05375588a5209418554d3182e287c1, type: 2}
     - target: {fileID: 1871535898687729320, guid: 7661c5fef9ea5de4a8fa62bc20e38818, type: 3}
       propertyPath: m_Name
       value: PortalEntrada 1 (2)
