@@ -25,7 +25,9 @@ public class PlayerHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             Debug.Log("MUERTO");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(4);
+            Cursor.lockState = CursorLockMode.None;
             transform.position = initialposition;
             currentHealth = maxHealth;
             healthText.text = currentHealth.ToString();
